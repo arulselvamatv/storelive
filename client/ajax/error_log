@@ -1,0 +1,56 @@
+[04-Jun-2022 06:37:43 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:38:31 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:39:13 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:39:16 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:39:42 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:40:39 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:40:47 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:40:49 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:41:40 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:42:37 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:43:44 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:53:07 UTC] PHP Warning:  require_once(login_action.php): failed to open stream: No such file or directory in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 2
+[04-Jun-2022 06:53:07 UTC] PHP Fatal error:  require_once(): Failed opening required 'login_action.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 2
+[04-Jun-2022 06:53:34 UTC] PHP Warning:  require_once(login_action.php): failed to open stream: No such file or directory in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 2
+[04-Jun-2022 06:53:34 UTC] PHP Fatal error:  require_once(): Failed opening required 'login_action.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 2
+[04-Jun-2022 06:54:28 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:54:52 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 06:55:11 UTC] PHP Warning:  require_once(login_action.php): failed to open stream: No such file or directory in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 2
+[04-Jun-2022 06:55:11 UTC] PHP Fatal error:  require_once(): Failed opening required 'login_action.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 2
+[04-Jun-2022 06:56:26 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfer_list.php on line 15
+[04-Jun-2022 07:17:54 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[04-Aug-2022 11:14:07 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[08-Aug-2022 05:38:44 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[16-Aug-2022 09:41:01 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[17-Aug-2022 06:06:21 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[22-Aug-2022 07:32:39 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[23-Aug-2022 18:22:39 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Database::$user in /home/storekare/public_html/client/ajax/ajax_transfer_list_ssp.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/storekare/public_html/client/ajax/ajax_transfer_list_ssp.php on line 28
+[23-Aug-2022 18:23:02 UTC] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Database::$user in /home/storekare/public_html/client/ajax/ajax_transfer_list_ssp.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/storekare/public_html/client/ajax/ajax_transfer_list_ssp.php on line 28
+[25-Aug-2022 05:13:20 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[25-Aug-2022 08:32:48 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[25-Aug-2022 11:27:03 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[12-Sep-2022 06:15:25 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[12-Sep-2022 06:22:27 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[12-Sep-2022 06:24:16 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[12-Sep-2022 12:19:06 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[13-Sep-2022 09:17:54 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[13-Sep-2022 09:19:03 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[13-Sep-2022 09:19:25 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[13-Sep-2022 09:20:12 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[13-Sep-2022 10:25:59 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[14-Sep-2022 04:27:30 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[14-Sep-2022 11:33:09 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[29-Sep-2022 16:58:32 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[30-Sep-2022 05:02:10 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[30-Sep-2022 05:42:57 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[30-Sep-2022 05:43:38 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[30-Sep-2022 05:43:53 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[30-Sep-2022 07:20:49 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[30-Sep-2022 07:21:41 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16
+[07-Oct-2022 17:35:50 UTC] PHP Notice:  Undefined variable: user_id in /home/storekare/public_html/client/ajax/ajax_transfered_list.php on line 16

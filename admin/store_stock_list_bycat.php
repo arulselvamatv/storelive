@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Store In Stock Report</title>
+
+    <style>
+        table,
+        td,
+        tr {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+<?php
+
+require_once("database/connect.php");
+
+$db=new Database;
+
+$db->connect();
+
+$unit=$_GET['unit'];
+
+// echo $order_number;exit;
+
+//echo $unit;exit;
+
+
+
+  echo '<section>
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-lg-12">
+                <h5>Category Name:'.$unit.'</h5>
+                    <table class="table table-bordered"> 
+                        <tbody align="center">
+                            <tr>
+                                <td colspan="10"><b>STORE STOCK REPORT</b></td>
+                            </tr>
+                          
+                            <tr> 
+                                <td>S NO  </td>
+                                <td>Quotation No. </td>
+                                <td>PO No.</td>
+                                <td>Product Name</td>
+                                <td>Specification</td>
+                                <td>Suplier Name</td>
+                                <td>Per Rate </td>
+                                <td>Total Quantity</td>
+                                <td>Unit</td>
+                                <td>Product Date</td>
+                              
+                            </tr>';
+
+  $asd =("SELECT pd.cat_name,st.`store_id`, st.`po_id`, st.`p_row_id`, st.unit, st.`actual_qty`, st.`received_qty` as qty, st.`per_amt` as `per_amt`,st.nos_qty,st.nosunit, count(st.`store_id`)  as received_qty, st.`billno`, st.`bill_date`, st.`bill_amt`as bill_amt, st.`received_date` as po_date, st.`u_id`, st.`grb_id` as grb_id, g.overall_total as overall_total,wo.suplier_id as suplier_id, s.name as supplier_name,wo.quo_no as quo_no,(wo.prod_name) as item_name,wo.ddl_pro_qty,wo.product_spec as item_desc,wo.suplier_id, st.se_no as se_no , wo.po_no as po_no,wo.po_status FROM `store_entry` as st 
+		INNER join grb as g on g.grb_no =st.grb_id
+		INNER join work_order as wo on wo.wo_id =st.po_id
+		INNER join suplier as s on s.sup_id =wo.suplier_id
+        INNER join product_details_info as pdi on wo.prod_name = CONCAT(pdi.pro_code, ' - ', pdi.pro_name)
+        INNER join product_details as pd on pdi.pro_id = pd.pro_id
+        
+		WHERE wo.`active_record` =1 and s.`active_record` =1 and st.dep=0 and pd.cat_name= '$unit' group by wo.prod_name order by st.`po_id`");
+		
+//	echo $asd;
+//   if ( $category_name = '.$unit.')
+//   {
+
+   $data = $db->query($asd);
+   $i=0;
+     while($row = $data->fetch(PDO::FETCH_ASSOC)){ 
+                
+            $i++;  
+         	$quo_no = $row['quo_no'];
+         	$po_no = $row['po_no'];
+         
+         		$item_name = $row['item_name'];
+         	    $item_desc = $row['item_desc'];
+         		
+ 				$supplier_name = $row['supplier_name'];
+                 $per_amt = $row['per_amt'];
+                 $received_qty = $row['received_qty'];
+                 $unit = $row['unit'];
+                 
+                 $po_date =$row['po_date'];
+                 
+                //   $out_qty = (($row['sale_qty']  +  $row['waste_quantity']));
+                  
+                //   $balances_stock = $no_qty - $out_qty ;
+                  
+                  
+                //   $per_amt_tot = $balances_stock * $per_amt;
+                  
+                //   if ($balances_stock != 0)
+                //   {
+            
+         
+         
+           
+          
+                             echo '<tr> 
+                             
+                                <td>'.$i.'</td>
+                                <td>'.$quo_no.'</td>
+                                <td>'.$po_no.'</td>
+                                <td>'.$item_name.'</td>
+                                <td>'.$item_desc.'</td>
+                                 <td>'.$supplier_name.'</td>
+                                <td>'. $per_amt.'</td>
+                               <td>'.$received_qty.'</td>
+                               <td>'.$unit.'</td>
+                               <td>'.$po_date.'</td>
+                            </tr>';
+             
+                 
+                //   }
+                //  else
+                //  {
+                     
+                //  }
+                 
+            }
+
+                
+            
+              //   Other Expances  
+            // $total_amt_sum_sub=$total_amt_sum+ 0;
+            //  $per_amt_sum_sub=$per_amt_sum+ 0;
+            //   $selling_amt_sum_sub=$selling_amt_sum+ 0;
+              
+            //   //Amount Revived
+            //   $total_amt_sum_sub_amt=$total_amt_sum_sub+ 0;
+            //  $per_amt_sum_sub_amt=$per_amt_sum_sub+ 0;
+            //   $selling_amt_sum_sub_amt=$selling_amt_sum_sub+ 0;
+
+                            // echo '<tr>
+                            //     <td colspan="6" align="right"><b>Total</b></td>
+                            //     <td  align="left"><b>'.round($total_amt_sum, 2).' </b></td>
+                              
+                            // </tr>
+                           
+                           
+                           
+
+                        '</tbody>
+                    </table>
+ 
+                </div>
+            </div>
+        </div> 
+    </section>';
+//   }
+//   else 
+//   {
+      
+//   }
+ 	?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+</body>
+
+</html>

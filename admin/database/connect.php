@@ -19,8 +19,8 @@ class Database
 	   try
 	   { 
         //   $this->conn = new PDO( "mysql:host=localhost; dbname=kare_store", "root", "");  // local DB
-// 		 $this->conn = new PDO( "mysql:host=localhost; dbname=kare_store", "store_kare", "n[nPI2[_&rcP");  // live DB
-	     $this->conn = new PDO('mysql:host='.self::$host.'; dbname='.self::$dbname, self::$user, self::$pass);
+// 		// $this->conn = new PDO( "mysql:host=localhost; dbname=kare_store", "store_kare", "n[nPI2[_&rcP");  // live DB
+	     $this->conn = new PDO( "mysql:host=127.0.0.1; dbname=kare_new", "karenew", "n[nPI2[_&rcP");
         // $this->conn = new PDO( "sqlsrv:server=IPADDRESS; Database=klustore", "root", "");
 		  if(!$this->conn) 
 		{

@@ -9,9 +9,9 @@ class Database
 	private $rand_key = 'SBnkckZwQopPyJHFz';          // Database
 	
 	public static $host = 'localhost';
-    public static $user = 'store_kare';
+    public static $user = 'karenew';
     public static $pass = 'n[nPI2[_&rcP';
-    public static $dbname = 'kare_store'; // lakshira_karestore
+    public static $dbname = 'kare_new'; // lakshira_karestore
     
 	public function connect()
 	{
